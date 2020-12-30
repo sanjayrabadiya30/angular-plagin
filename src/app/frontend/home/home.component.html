@@ -1,0 +1,46 @@
+<p>home works!</p>
+<div style="padding: 50px;">
+  <ngx-slick-carousel class="carousel"  #slickModal="slick-carousel"  [config]="slideConfig" >
+    <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+    <img src="{{ slide.img }}" alt="" width="100%">
+  </div>
+  </ngx-slick-carousel>
+</div>
+<div class="w-100"> 
+  <div class="row">
+    <div class="col-md-6">
+      <owl-carousel [options]="slideOptions"  [carouselClasses]="['owl-theme', 'sliding']" >  
+        <div class="item" > 
+          <img src= "http://placehold.it/350x150/000000" />     
+        </div>
+        <div class="item" >
+          <img src= "http://placehold.it/350x150/000000" />  
+        </div>  
+        <div class="item" >
+          <img src= "http://placehold.it/350x150/333333" />  
+        </div>
+        <div class="item" >
+          <img src= "http://placehold.it/350x150/666666" />  
+        </div>
+        <div class="item" >
+          <img src= "http://placehold.it/350x150/000000" />  
+        </div>
+        <div class="item" > 
+          <img src= "http://placehold.it/350x150/000000" />  
+        </div>  
+        <div class="item" >
+          <img src= "http://placehold.it/350x150/333333" />  
+        </div>
+        <div class="item" >
+          <img src= "http://placehold.it/350x150/666666" />  
+        </div>
+      </owl-carousel>  
+    </div>
+  </div>
+</div>
+
+
+
+    
+
+   
