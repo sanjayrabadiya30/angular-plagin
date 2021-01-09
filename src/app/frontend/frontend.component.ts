@@ -17,7 +17,7 @@ export class FrontendComponent implements OnInit {
 
   public loadScript() {
     var dynamiccss = [      
-     // "../../../assets/frontend/css/front-style.css",
+      "../../../assets/frontend/css/frontent.css",
     ];
 
     for (var i = 0; i < dynamiccss.length; i++) {

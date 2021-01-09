@@ -4,6 +4,7 @@ import { Routes, RouterModule } from "@angular/router";
 import { LoginComponent } from './login.component';
 
 
+
 const routes: Routes = [
   {
     path: "",
@@ -16,6 +17,11 @@ const routes: Routes = [
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
-  ]
+    
+
+  ],
+
 })
-export class LoginModule { }
+export class LoginModule {
+  
+ }

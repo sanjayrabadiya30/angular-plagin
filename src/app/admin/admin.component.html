@@ -1,7 +1,7 @@
-<div class="wrapper default-theme">
-    <app-admin-header></app-admin-header>
+<div class="wrapper default-theme" [ngClass]="isEnabledMenu ? 'pinned-sidebar' : ''">
+    <app-admin-header (toggle)="onToggle($event)"></app-admin-header>
     <main class="main-part">
-        <app-admin-sidebar></app-admin-sidebar>
+        <app-admin-sidebar [ngClass]="isEnabledMenu ? 'active' : ''"></app-admin-sidebar>
       <div class="pages container-fluid pt-4 pb-4 pl-4 pr-4 ">
         <router-outlet></router-outlet>
       </div>

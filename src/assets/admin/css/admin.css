@@ -1,0 +1,50 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body {font-size: 14px;color: #333;font-weight: 400;background: #f4f7fa;position: relative;font-family: 'Poppins', sans-serif;}
+ul,li{list-style: none;}
+.btn.focus, .btn:focus {outline: 0;box-shadow:none;}
+.bg-dark{background: #242939 !important;}
+.fixed-top {position: fixed;top: 0;right: 0;left: 0;z-index: 1030;}
+.wrapper nav.navbar {height: 60px;padding: 0;border-bottom: 1px solid;}
+.wrapper.default-theme nav.navbar {background: #242939;border-color: rgba(110,120,153,.3);}
+.wrapper nav.navbar .navbar-header {height: 100%;display: flex;align-items: center;}
+.wrapper.default-theme nav.navbar .nav-link {color: #6e7899;}
+.wrapper nav.navbar .nav-link i {font-size: 1.1rem;width: 40px;height: 40px;line-height: 40px;border-radius: 0;}
+.wrapper.default-theme nav.navbar .nav-link i {border-color: #6e7899;background: #282f48;}
+.wrapper nav.navbar .nav-alert {display: inline-block;width: 11px;height: 11px;border-radius: 50%;position: absolute;top: 0;border: 3px solid #1c1e21;-webkit-transform: translateX(13px);transform: translateX(13px);}
+.wrapper.default-theme nav.navbar .nav-alert {border-color: #2f3546;}
+.wrapper.default-theme nav.navbar .nav-alert.notifications {background-color: #ff61c5;box-shadow: 0 0 4px #ff61c5;}
+.wrapper.default-theme nav.navbar .nav-alert.messages {background-color: #61b8ff;box-shadow: 0 0 4px #61b8ff;}
+.wrapper nav.navbar .right-nav ul li {flex: 1 1 0;max-width: 110px;padding: 1rem;}
+.wrapper nav.navbar .right-nav ul li .nav-link {position: relative;display: -webkit-box;display: -moz-box; display: -ms-flexbox; display: -webkit-flex; align-items: center;flex-direction: column;justify-content: center;padding: 0 5px;}
+.wrapper nav.navbar .right-nav {border-top: 1px solid;padding-top: 1rem;padding-bottom: 1rem;height: calc(100vh - 60px + 1px)!important;}
+.dropdown-menu .triangle {position: absolute;top: -8px;right: 17px;height: 15px;width: 15px;border-radius: 6px 0px 0px 0px;transform: rotate(45deg);background: #FFF;z-index: -1;}
+.dropdown-menu {width: 200px;min-width: 200px;    padding: 0;}
+.notifications .dropdown-menu {width: 280px;min-width: 280px;}
+.notifications .dropdown-menu .dropdown-header {background: #FFF;padding: 15px;position: relative;text-align: center;color: #747F8B;font-weight: bold;border-radius: 10px 10px 0 0;border: 0px;border-style: solid;border-bottom-width: 1px;-moz-border-image: -moz-linear-gradient(right, white, #cedae0, #cedae0, white) 1 20%;-o-border-image: -o-linear-gradient(right, white, #cedae0, #cedae0, white) 1 20%;border-image: linear-gradient(to right, white 0%, #cedae0 40%, #cedae0 60%, white 100%) 1 20%;box-shadow: 0px 2px 10px -2px #cedae0;}
+.notifications .dropdown-menu .dropdown-header .count {position: static;height: 25px;width: 25px;display: inline-block;line-height: 24px;margin-left: 8px;font-size: 12px;vertical-align: middle;}
+.notifications .dropdown-menu .dropdown-menu {max-height: 292px;background: #e9f0f3;overflow-y: auto;overflow-x: hidden;}
+.notifications .dropdown-menu .notification {background: #FFF;padding: 15px;border: 0px;border-style: solid;border-bottom-width: 1px;-moz-border-image: -moz-linear-gradient(right, white, #cedae0, #cedae0, white) 1 20%;-o-border-image: -o-linear-gradient(right, white, #cedae0, #cedae0, white) 1 20%;
+border-image: linear-gradient(to right, white 0%, #cedae0 40%, #cedae0 60%, white 100%) 1 20%;}
+.notifications .dropdown-menu .notification:last-child{border-bottom: 0;}
+.notifications .dropdown-menu .notification.new {-webkit-transition: all 500ms ease;-moz-transition: all 500ms ease;-ms-transition: all 500ms ease;-o-transition: all 500ms ease;transition: all 500ms ease;background: #e9f0f3;}
+.notifications .dropdown-menu .dropdown-body {max-height: 263px;background: #e9f0f3;overflow-y: auto;overflow-x: hidden;}
+.notifications .dropdown-menu .notification .notification-image-wrapper {display: table-cell;vertical-align: middle;}
+.notifications .dropdown-menu .dropdown-body .notification .notification-image {height: 32px;width: 32px;overflow: hidden;border-radius: 100%;}
+.notifications .dropdown-menu .notification .notification-text {display: table-cell;padding-left: 15px;vertical-align: middle;color: #747F8B;cursor: pointer;font-size: 14px;word-spacing: 2px;line-height: 21px;}
+.notifications .dropdown-menu .notification .notification-text .highlight {font-weight: bold;width: 100px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;display: block;}
+.notifications .dropdown-menu .notification .notification-text .notification-content{max-width: 200px;}
+.notification-content p{ display: -webkit-box;max-width: 200px;-webkit-line-clamp: 2;-moz-line-clamp: 2;line-clamp: 2;-webkit-box-orient: vertical;-moz-box-orient: vertical;box-orient: vertical;overflow: hidden;font-size: 12px;line-height: normal;margin: 0;}
+.user-picture {width: 60px;height: 60px;border-radius: 50%;overflow: hidden;}
+.user-picture img {width: 100%;height: 100%;-o-object-fit: cover;object-fit: cover;-o-object-position: center;object-position: center;}
+.setting a.dropdown-item{padding: .50rem 1.5rem;font-size: 14px;}
+.setting a.dropdown-item i{margin-right: 10px;}
+
+@media (min-width: 768px){
+    .wrapper nav.navbar .navbar-header {width: 260px;margin-left: 0!important;}
+    .wrapper nav.navbar .right-nav ul {margin-left: auto;flex-wrap: nowrap;}
+    .wrapper nav.navbar .nav-alert {right: 20px;-webkit-transform: translateX(0);transform: translateX(0);}
+    .wrapper nav.navbar .nav-alert {right: 12px;}
+    .wrapper nav.navbar .right-nav ul li {padding: 0;}
+    .wrapper nav.navbar .right-nav {height: 100%!important;border-top: none;background: 0 0!important;}
+}

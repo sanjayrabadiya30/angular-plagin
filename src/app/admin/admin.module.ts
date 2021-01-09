@@ -14,7 +14,7 @@ import { AdminRoutingModule } from './admin-routing.module';
     AdminComponent,  
     AdminLandingComponent,
     AdminHeaderComponent,
-    AdminSidebarComponent,     
+    AdminSidebarComponent     
   ],
   imports: [
     CommonModule,

@@ -1,0 +1,63 @@
+/* login page  */
+.auth-wrapper  {
+    position: relative;    
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    min-width: 100%;
+    min-height: 100vh;
+}
+.auth-wrapper .auth-content {
+    position: relative;
+    width: 390px;
+    padding: 15px;
+}
+.auth-wrapper .auth-bg .r {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+.auth-wrapper .auth-bg .r:first-child {
+    top: -100px;
+    right: -100px;
+    background: linear-gradient(-135deg, #1de9b6 0%, #1dc4e9 100%);
+}
+.auth-wrapper .auth-bg .r:nth-child(odd) {
+    -webkit-animation: floating 7s infinite;
+    animation: floating 7s infinite;
+}
+.auth-wrapper .auth-bg .r:first-child {
+    background: #2775ff;
+    background: linear-gradient(-135deg, #2775ff 0%, #7202bb 100%);
+    background: -moz-linear-gradient(-135deg, #2775ff 0%, #7202bb 100%);
+    background-image: linear-gradient(-135deg, #2775ff, #7202bb);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2775ff', endColorstr='#7202bb',GradientType=1 );
+}
+.auth-wrapper .auth-bg .r.s {
+    width: 20px;
+    height: 20px;
+}
+.auth-wrapper .auth-bg .r:nth-child(even) {
+    -webkit-animation: floating 9s infinite;
+    animation: floating 9s infinite;
+}
+.auth-wrapper .auth-bg .r.s:nth-child(2) {
+    top: 150px;
+    right: -150px;
+    background: #04a9f5;
+}
+.auth-wrapper .auth-bg .r.s:nth-child(3) {
+    left: -150px;
+    bottom: 150px;
+    background: #1de9b6;
+}
+.auth-wrapper .auth-bg .r:last-child {
+    left: -100px;
+    bottom: -100px;
+    background: linear-gradient(-135deg, #899FD4 0%, #A389D4 100%);
+}
+
+.auth-wrapper .auth-icon {
+    font-size: 30px;
+}
